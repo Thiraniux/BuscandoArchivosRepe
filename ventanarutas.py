@@ -4,6 +4,9 @@ from tkinter import filedialog
 root = tk.Tk()
 root.withdraw()
 
-ruta = filedialog.askdirectory(title ="Selecciona carpteta")
-
+cantidaprint = int(print("Ingrese la cantidad de Carpetas a utilizar"))
+                  
+while conteo<=cantidaprint:
+    ruta = filedialog.askdirectory(title ="Selecciona carpteta")
+conteo= conteo+1
 print("Ruta seleccionada:", ruta)
