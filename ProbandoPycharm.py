@@ -7,7 +7,6 @@ listax = []
 def archivosdir():
     count = 0
     nombrecarpetas = []
-    listax = []
     for item in archivos:
         if item.startswith(".") or (item.__len__()>=15) or item.startswith("$"):
             listax.append(item)
@@ -16,7 +15,7 @@ def archivosdir():
             #print(item + " \n")
             nombrecarpetas.append(item)
     #print(nombrecarpetas)
-    #print("total de elementos sistema no incluidos",count)
+    print("total de elementos sistema no incluidos",count)
     return nombrecarpetas
 
 
@@ -24,8 +23,7 @@ def archivosdir():
 def buscandoraiz(lista):
     for item in lista:
         direcc = directorio+'/'+item
-        #print(direcc)
+        print(direcc)
 
-listado = archivosdir()
-buscandoraiz(listado)
+
 
